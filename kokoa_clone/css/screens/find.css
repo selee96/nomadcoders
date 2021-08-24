@@ -84,6 +84,29 @@
 .open-post__heart_count span {
   margin-left: 3px;
 }
+
+@keyframes hearthBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+  }
+}
+.open-post__heart_count:hover i {
+  /*
+  will-change 사용 전/후 비교해보면 하트 에니메이션 동작이 명확히 차이남
+  브라우저에게 변화지점을 명확히 말해줌
+  브라우저가 컴퓨터의 그래픽카드를 이용해 애니메이션 가속화
+  */
+  will-change: transform;
+  animation: hearthBeat 2s linear infinite;
+}
 .user-component__warning {
   color: tomato;
 }
