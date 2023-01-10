@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link rel="shortcut icon" href="https://realclass.co.kr/new/favicon.ico" />
+    <title>Home - My first website.</title>
+    <meta name="description" content="This is my website" />
+    <meta charset="utf-8" />
+    <style>
+      a {
+        color: wheat;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 50px;
+        /* transition: background-color 10s ease-in-out, color 5s ease-in-out; */
+        /* transition: all 5s ease-in-out; */
+        transition: all 3s cubic-bezier(0, 0, 0, 0);
+      }
+      a:hover {
+        color: tomato;
+        background-color: wheat;
+      }
+      img {
+        border: 5px solid black;
+        border-radius: 50%;
+        transition: transform 2s ease-in-out;
+      }
+      img:hover {
+        transform: rotateY(360deg) scale(0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">Go Home</a>
+    <img src="img/cat.jpg" alt="" />
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link rel="shortcut icon" href="https://realclass.co.kr/new/favicon.ico" />
+    <title>Home - My first website.</title>
+    <meta name="description" content="This is my website" />
+    <meta charset="utf-8" />
+    <style>
+      @keyframes flip {
+        0% {
+          transform: rotateX(0);
+        }
+        50% {
+          transform: rotateX(360deg) translateX(100px);
+        }
+        100% {
+          transform: rotateX(0);
+        }
+      }
+
+      img {
+        border: 5px solid black;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        animation: flip 5s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="img/cat.jpg" alt="" />
+  </body>
+</html>

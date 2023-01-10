@@ -1,0 +1,83 @@
+h1 {
+    color: yellowgreen;
+    font-size: 50px;
+    text-decoration: underline;
+    font-weight: 300;
+    font-style: italic;
+  }
+address {
+    text-align: center;
+    color: tomato;
+}
+
+body {
+background-color: #6bbcbe;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+body > div {
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+@keyframes cercle {
+    0% {
+        transform:rotateZ(0);
+    }
+    50% {
+        transform:rotateZ(180deg);
+    }
+    100% {
+        transform:rotateZ(360deg);
+    }
+  }
+
+#cercle {
+    animation: cercle 2s ease-in-out infinite;
+}
+
+#cercle div{
+    background-color: #ffffff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+@keyframes ractangle {
+    50% {
+        transform: scaleY(1);
+      }
+      75% {
+        transform: scaleY(1.8);
+      }
+      100% {
+        transform: scaleY(1);
+      }
+  }
+
+#ractangle div{
+    width: 8px;
+    height: 40px;
+    background-color: #ffffff;
+}
+
+#ractangle div:first-child {
+    animation: ractangle 1s ease-in-out infinite;
+}
+#ractangle div:nth-child(2) {
+    animation: ractangle 1s ease-in-out infinite 0.1s;
+}
+#ractangle div:nth-child(3) {
+    animation: ractangle 1s ease-in-out infinite 0.2s;
+}
+#ractangle div:nth-child(4) {
+    animation: ractangle 1s ease-in-out infinite 0.3s;
+}
+#ractangle div:nth-child(5) {
+    animation: ractangle 1s ease-in-out infinite 0.4s;
+}
