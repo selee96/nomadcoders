@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;600;800&display=swap');
+body {
+    font-family: "Lexend Deca", sans-serif;
+    padding: 40px;
+    border: 7px solid #00c6ad;
+    width: 500px;
+}
+.title-bar {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+} 
+.title-bar > div {
+    width: 33%;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+.title-bar > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+.play-info {
+    display: flex;
+    flex-wrap : wrap 
+}
+.play-info__img {
+    width: 180px;
+    height: 180px;
+    background-color: #ffbd11;
+    color: white;
+    border: 3px solid black;
+    border-radius: 20px;
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-info__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 140px;
+    padding: 0px 20px;
+}
+.play-info__text span:first-child {
+    font-size: 3.5em;
+    font-weight: 800;
+}
+.play-info__text span:last-child {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.paly-btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px;
+    flex-wrap: nowrap;
+}
+.paly-btn div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2em;
+    font-weight: 600;
+    border: 3px solid black;
+    border-radius: 50%;
+    padding: 25px;
+    width: 25px;
+    height: 25px;
+    box-shadow: 00px 6px 0px black;
+
+}
+.paly-btn div:first-child {
+    width: 200px;
+    border-radius: 20px;
+} 
+.song-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 520px;
+    margin: 60px 0px;
+}
+.song-list__column {
+    display: flex;
+}
+.song-list__column > div:first-child {
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.song-list__column:nth-child(1) .song-list__column__img {
+    background-color: red;
+}
+.song-list__column:nth-child(2) .song-list__column__img {
+    background-color: palevioletred;
+}
+.song-list__column:nth-child(3) .song-list__column__img {
+    background-color: blue;
+}
+.song-list__column:nth-child(4) .song-list__column__img {
+    background-color: darkcyan;
+}
+.song-list__column__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+.song-list__column__text span:first-child {
+    font-size: 2.2em;
+    font-weight: 600;
+}
+.song-list__column__text span:last-child {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: dimgrey;
+}
