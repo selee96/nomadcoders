@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Assignment0111</title>
+    <link rel="stylesheet" href="assignment0111.css" />
+  </head>
+  <body>
+    <!-- 
+레이아웃
+지난번 챌린지와 마찬가지로 큰 덩어리부터 작은 덩어리 순으로 작업해보세요.
+노란 배경의 header, 그림자가 있는 search, main.
+main은 Book of the day, Top Adventures, Popular authors.
+Book of the day는 cover, informations.
+information는 … 이런 식으로 큰 것에서 작은 것 순으로 작업해보세요.
+
+Search 파트의 그림자
+그림자를 구현하는 방법은 다양합니다.
+box-shadow에 대해 알아보세요.
+
+Top Adventures 파트
+해당 파트엔 레이아웃의 최대 width를 넘는 컨텐츠들이 존재합니다.
+over된 부분은 스크롤할 수 있도록 만들 수 있습니다.
+overflow-x에 대해 알아보세요.
+-->
+
+    <header>
+      <span><i class="fas fa-bars"></i></span>
+      <span>library</span>
+      <span><i class="fas fa-shopping-basket"></i></span>
+    </header>
+    <div class="search">
+      <input class="search__input" type="text" placeholder="Search books...." />
+    </div>
+    <div class="search-icon">
+      <i class="fas fa-search"></i>
+    </div>
+    <main>
+      <div class="book-of-the-day">
+        <div class="book-of-the-day__tit">Book of the day</div>
+        <div class="book-of-the-day__con">
+          <div class="book-of-the-day__img">
+            <img src="https://m.media-amazon.com/images/I/512eZ2k0z0L.jpg" />
+          </div>
+          <div class="book-of-the-day__info">
+            <span class="book-of-the-day__name">No Fixed Abode</span>
+            <span class="book-of-the-day__genre">Journey Through</span>
+            <div class="book-of-the-day__score">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="book-of-the-day__category">
+              <button>Journey</button>
+              <button>Biography</button>
+            </div>
+            <div class="book-of-the-day__btn">
+              <button class="book-of-the-day__save">
+                <i class="fas fa-bookmark"></i>
+              </button>
+              <button class="book-of-the-day__dtl">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top-adventures">
+        <div class="top-adventures__tit">Top Adventures</div>
+        <ul class="top-adventures__con">
+          <li class="top-adventures__item">
+            <div class="top-adventures__img">
+                <img src="https://image.yes24.com/momo/TopCate2343/MidCate006/234259264.jpg" />
+            <div class="top-adventures__score">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </li>
+          <li class="top-adventures__item">
+            <div class="top-adventures__img">
+                <img src="https://m.media-amazon.com/images/I/51S1JwII6XL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" />
+            </div>
+            <div class="top-adventures__score">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </li>
+          <li class="top-adventures__item">
+            <div class="top-adventures__img">
+                <img src="https://static.wixstatic.com/media/dac741_5186941b1618460db2a8e8be23e0110d~mv2.jpg/v1/fill/w_480,h_534,al_c,lg_1,q_80,enc_auto/dac741_5186941b1618460db2a8e8be23e0110d~mv2.jpg" />
+            </div>
+            <div class="top-adventures__score">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </li>
+          <li class="top-adventures__item">
+            <div class="top-adventures__img">
+                <img src="https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/1mxK/image/WF6TWBJYUcTKPqZiq_neK8HOz8A" />
+            </div>
+            <div class="top-adventures__score">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="popular-authors">
+        <div class="popular-authors__tit">Popular authors</div>
+        <div class="popular-authors__con">
+          <img src="https://t2.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/2fG8/image/vFh9yTjRJgWszg8ev6RWEtFK0jI.jpg" alt="" />
+          <div class="popular-authors__info">
+            <div class="popular-authors__name">
+              George Raymond Richard Martin
+            </div>
+            <p class="popular-authors__explain">
+              Modern American science fiction writer, screenwriter, producer and
+              editor, winner of many literary awards.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
