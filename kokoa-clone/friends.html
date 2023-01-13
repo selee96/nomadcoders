@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Friends - Kokoa Clone</title>
+    <style>
+      .nav__btn:nth-child(1) .nav__link {
+        color: #2e363e;
+      }
+    </style>
   </head>
   <body>
     <div class="status-bar">
@@ -22,25 +27,35 @@
         <i class="fas fa-bolt"></i>
       </div>
     </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search"></i></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
-          <a calss="nav__link" href="friends.html">
+          <a class="nav__link" href="friends.html">
             <i class="fas fa-user fa-lg"></i>
           </a>
         </li>
         <li class="nav__btn">
-          <a calss="nav__link" href="#">
+          <a class="nav__link" href="#">
+            <span class="nav__notification">1</span>
             <i class="fas fa-comment fa-lg"></i>
           </a>
         </li>
         <li class="nav__btn">
-          <a calss="nav__link" href="#">
+          <a class="nav__link" href="#">
             <i class="fas fa-search fa-lg"></i>
           </a>
         </li>
         <li class="nav__btn">
-          <a calss="nav__link" href="#">
+          <a class="nav__link" href="#">
             <i class="fas fa-ellipsis-h fa-lg"></i>
           </a>
         </li>
