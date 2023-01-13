@@ -1,0 +1,28 @@
+.user-component,
+.user-component__column:first-child {
+    display: flex;
+    align-items: center;
+}
+.user-component__avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit:cover;
+    margin-right: 20px;
+}
+.user-component__avatar--xl{
+    width: 75px;
+    height: 75px;
+}
+.user-component__avatar--sm {
+    width: 65px;
+    height: 65px;
+}
+.user-component__title {
+    font-weight: 600;
+    font-size: 1.5em
+}
+.user-component__subtitle {
+    margin-top: 8px;
+    color: rgba(0, 0, 0, 0.5);
+}
