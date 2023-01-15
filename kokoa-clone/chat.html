@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat - Kokoa Clone</title>
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>225%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fas fa-chevron-left"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 id="user-name" class="alt-header__title">KHG</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search"></i></span>
+        <span><i class="fas fa-bars"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Monday, January 16, 2023</div>
+
+      <div class="message-row">
+        <img
+          src="https://image.winudf.com/v2/image/Y29tLmtha2FvZ2FtZXMuZnJpZW5kc0phbV9pY29uXzE1Mjg5ODQ2NTJfMDk4/icon.png?w=&fakeurl=1"
+        />
+        <div class="message-row__content">
+          <span class="message__author">KHG</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">What's up?</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="replay">
+      <div class="replay__column">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="replay__column">
+        <input type="text" placeholder="write a message..." />
+        <i class="far fa-smile"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <div id="no-mobile">
+      Your screen is too big <i class="far fa-grin-tongue-squint"></i>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        let name = null;
+        const uri = window.location.search;
+        const get = uri.substr(uri.indexOf("?") + 1);
+        if (uri != get) {
+          name = get.substr(get.indexOf("=") + 1);
+        }
+        //.을 제외한 특수문자 정규식
+        const regExp = /[\{\}\[\]\/?,;:|\)*~`!^\-+<>@\#$%&\\\=\(\'\"]/gi;
+        if (regExp.test(name)) {
+          //.을 제외한 특수문자를 공백으로 치환
+          name = name.replace(regExp, " ");
+        }
+        //추출한 값이 null이 아닐 경우 Friend name 입력
+        if (name != null) {
+          document.getElementById("user-name").innerText = name;
+          document.getElementsByClassName("message__author").innerText = name;
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -34,7 +34,7 @@
     transition: border-color 0.2s ease-in-out;
 }
 #login-form > input:not([type="submit"])::placeholder {
-    color: rgba(0, 0, 0, 0.4);
+    color: var(--light)
     font-size: 1.2em;
 }  
 #login-form > input:not([type="submit"]):focus {

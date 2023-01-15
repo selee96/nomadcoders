@@ -1,0 +1,32 @@
+.settings-list {
+    border-bottom: var(--main-border);
+    padding: 10px 0;
+}
+.settings__setting {
+    padding: 25px 0px;
+    /* border-bottom: var(--main-border); */
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.settings__setting i {
+    margin-right: 20px;
+    opacity: 0.8;
+}
+.settings__setting-column:last-child {
+    color: var(--light);
+}
+.settings__setting-column > span{
+    position: relative;
+}
+.settings__setting-column > span > span{
+    position: absolute;
+    font-size: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 8px;
+    right: -28px;
+}

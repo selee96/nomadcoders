@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Friends - Kokoa Clone</title>
     <style>
-      .nav__btn:nth-child(1) .nav__link {
+      .nav__btn:nth-child(2) .nav__link {
         color: #2e363e;
       }
     </style>
@@ -29,58 +29,54 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Chats</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-xs"></i></span>
+        <span><i class="far fa-comment-dots"></i></span>
         <span><i class="fas fa-music fa-xs"></i></span>
         <span><i class="fas fa-cog fa-xs"></i></span>
       </div>
     </header>
 
-    <a id="friends-display-link">
-      <i class="fas fa-info-circle"></i> Friends' Names Display
-      <i class="fas fa-angle-right"></i>
-    </a>
-
     <main class="main-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="https://i.pinimg.com/736x/ef/aa/ce/efaace76f63244a76df92df37d6ccc23.jpg"
-            class="user-component__avatar user-component__avatar--xl"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Selee</h4>
-            <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
-          </div>
-        </div>
-        <div class="user-component__column"></div>
-      </div>
-      <div class="friend-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fas fa-chevron-up"></i>
-        </div>
+      <a href="chat.html?user=KHG">
         <div class="user-component">
           <div class="user-component__column">
             <img
               src="https://i.pinimg.com/736x/ef/aa/ce/efaace76f63244a76df92df37d6ccc23.jpg"
-              class="user-component__avatar user-component__avatar--sm"
+              class="user-component__avatar"
             />
             <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Channel
-              </h4>
+              <h4 class="user-component__title">KHG</h4>
+              <h6 class="user-component__subtitle">YOU CAN DO IT</h6>
             </div>
           </div>
           <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <i class="fas fa-chevron-right"></i>
-            </div>
+            <span class="user-component__time">21:22</span>
+            <div class="badge">1</div>
           </div>
         </div>
-      </div>
+      </a>
+      <a href="chat.html?user=KokoaTalk">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://i.pinimg.com/736x/ef/aa/ce/efaace76f63244a76df92df37d6ccc23.jpg"
+              class="user-component__avatar"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">KokoaTalk</h4>
+              <h6 class="user-component__subtitle">
+                Please check My Kokoa Account Info
+              </h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">21:22</span>
+            <div class="badge">1</div>
+          </div>
+        </div>
+      </a>
     </main>
 
     <nav class="nav">
@@ -108,9 +104,6 @@
         </li>
       </ul>
     </nav>
-    <div id="splash-screen">
-      <i class="fas fa-comment fa-lg"></i>
-    </div>
     <div id="no-mobile">
       Your screen is too big <i class="far fa-grin-tongue-squint"></i>
     </div>
