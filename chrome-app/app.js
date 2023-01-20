@@ -77,14 +77,14 @@ function anounce(age) {
 
 // const age = parseInt(prompt("How old are you?"));
 // anounce(age);
-
+// typeof age > age의 type을 알아볼 떄 
 
 
 const title = document.getElementById("title");
 
 // console.dir(title);
 
-title.innerText = "Got you!";
+// title.innerText = "Got you!";
 
 
 
@@ -100,12 +100,36 @@ console.log(title2);
 const title3 = document.querySelectorAll(".hello h1");
 console.log(title3);
 
-title.style.color = "blue";
+// title.style.color = "blue";
 
 
+
+// function hondleTitleClick() {
+//     const currentColor = title.style.color;
+//     let newColor;
+//     if(currentColor === "blue") {
+//         newColor = "tomato";
+//     } else {
+//         newColor = "blue";
+//     }
+
+//     title.style.color = newColor;
+// }
+
+const h1 = document.querySelector("div.hello:first-child h1");
 
 function hondleTitleClick() {
-    title.style.color = "green";
+
+    const clickedClass = "clicked"
+
+    // if(h1.classList.contains(clickedClass)) {
+    //     h1.classList.remove(clickedClass);
+    // } else {
+    //     h1.classList.add(clickedClass);
+    // }
+
+    h1.classList.toggle(clickedClass);
+    
 }
 function headleMouseEnter() {
     title.innerText = "mouse is here~~~";
@@ -126,16 +150,18 @@ function hadleWindowOffline() {
 function hadleWindowOnline() {
     alert("All GOOD~~~");
 }
-title.addEventListener("click", hondleTitleClick);
-title.addEventListener("mouseenter", headleMouseEnter);
-title.addEventListener("mouseleave", headleMouseLeave);
+h1.addEventListener("click", hondleTitleClick);
+// title.addEventListener("mouseenter", headleMouseEnter);
+// title.addEventListener("mouseleave", headleMouseLeave);
 
+// 다른 방식--------------------
 // title.onclick = hondleTitleClick;
 // title.onmouseenter = headleMouseEnter;
 // title.onmouseleave = headleMouseLeave;
+// -----------------------------
 
 
-window.addEventListener("resize", hadleWindowResize);
-window.addEventListener("copy", hadleWindowCopy);
-window.addEventListener("offline", hadleWindowOffline);
-window.addEventListener("online", hadleWindowOnline);
+// window.addEventListener("resize", hadleWindowResize);
+// window.addEventListener("copy", hadleWindowCopy);
+// window.addEventListener("offline", hadleWindowOffline);
+// window.addEventListener("online", hadleWindowOnline);
