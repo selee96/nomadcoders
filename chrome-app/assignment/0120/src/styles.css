@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+    color: white;
+  }
+
+.blue {
+  background-color: blue;
+}
+.purple {
+  background-color: blueviolet;
+}
+.yellow {
+  background-color: yellow;
+}
