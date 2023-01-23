@@ -1,0 +1,9 @@
+body {
+    display: flex;
+    justify-content: space-evenly;
+}
+.box {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}

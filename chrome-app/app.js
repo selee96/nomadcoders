@@ -1,3 +1,33 @@
+const loginForm = document.getElementById("login-form");
+const loginInput = loginForm.querySelector("input");
+const greeting = document.querySelector("#greeting");
+
+const HIDDEN_CLASSNAME = "hidden";
+const USERNAME_KEY = "username";
+
+function onLoginSunmit(event) {
+    event.preventDefault();
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    const username = loginInput.value;
+    localStorage.setItem(USERNAME_KEY, username);
+    paingGreetings(username);
+};
+
+function paingGreetings(username) {
+    greeting.innerText = `Hello ${username}`;
+    greeting.classList.remove(HIDDEN_CLASSNAME);
+}
+
+const savedUsername = localStorage.getItem(USERNAME_KEY);
+
+if (savedUsername === null) {
+    loginForm.classList.remove(HIDDEN_CLASSNAME);
+    loginForm.addEventListener("submit", onLoginSunmit);
+} else {
+    paingGreetings(savedUsername);
+}
+
+/*
 // Array
 const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
 
@@ -151,6 +181,7 @@ function hadleWindowOnline() {
     alert("All GOOD~~~");
 }
 h1.addEventListener("click", hondleTitleClick);
+
 // title.addEventListener("mouseenter", headleMouseEnter);
 // title.addEventListener("mouseleave", headleMouseLeave);
 
@@ -165,3 +196,5 @@ h1.addEventListener("click", hondleTitleClick);
 // window.addEventListener("copy", hadleWindowCopy);
 // window.addEventListener("offline", hadleWindowOffline);
 // window.addEventListener("online", hadleWindowOnline);
+
+*/

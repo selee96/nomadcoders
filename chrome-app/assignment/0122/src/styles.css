@@ -1,0 +1,12 @@
+.show-result {
+  font-weight: bold;
+}
+.game-range,
+.play-game {
+  display: flex;
+  align-items: center;
+}
+.game-range input,
+.play-game input {
+  height: fit-content;
+}
