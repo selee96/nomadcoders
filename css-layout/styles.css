@@ -1,9 +1,26 @@
 body {
-    display: flex;
-    justify-content: space-evenly;
+    background-color: antiquewhite;
 }
-.box {
+.father {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+}
+.child {
     background-color: blue;
-    width: 100px;
-    height: 100px;
+    flex-basis: 100px;
+    /* height: 100px; */
+
+    color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    
+}
+
+.child:nth-child(2) {
+    background-color: blueviolet;
 }
