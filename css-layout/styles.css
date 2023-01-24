@@ -2,16 +2,14 @@ body {
     background-color: antiquewhite;
 }
 .father {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100vh;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 100px 50px 300px;
+    column-gap: 10px;
+    row-gap: 10px;
 }
 .child {
     background-color: blue;
-    flex-basis: 100px;
-    /* height: 100px; */
-
     color: white;
     font-size: 2em;
     display: flex;
@@ -19,8 +17,4 @@ body {
     align-items: center;
     border: 1px solid black;
     
-}
-
-.child:nth-child(2) {
-    background-color: blueviolet;
 }
