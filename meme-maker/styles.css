@@ -2,10 +2,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-direction: column;
 }
+
 canvas {
-    width: 300px;
-    height: 300px;
     border: 5px solid black;
+}
+.option-container {
+    display: flex;
+    align-items: flex-start;
+}
+.color-options {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 50px);
+}
+.color-option {
+    cursor: pointer;
 }
